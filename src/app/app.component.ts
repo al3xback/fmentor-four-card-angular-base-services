@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
+import { BaseService } from './shared/base.service';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.scss'],
+	providers: [BaseService]
 })
-export class AppComponent {
-  title = 'fmentor-four-card-angular-base-services';
-}
+export class AppComponent {}

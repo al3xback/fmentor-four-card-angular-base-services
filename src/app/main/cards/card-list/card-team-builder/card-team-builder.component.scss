@@ -1,0 +1,47 @@
+@use '../../../../../assets/scss/abstracts/variables' as var;
+@use '../../../../../assets/scss/abstracts/functions' as func;
+@use '../../../../../assets/scss/abstracts/mixins' as mix;
+
+:host {
+	position: relative;
+	@include mix.flexbox;
+	@include mix.flex-direction(column);
+	min-height: func.em(220, var.$font-size-primary);
+	padding: func.em(24, var.$font-size-primary);
+	background-color: var.$color-white;
+	@include mix.border-radius(8px);
+	@include mix.box-shadow(
+		0px func.em(15, var.$font-size-primary)
+			func.em(20, var.$font-size-primary) 0 rgba(0, 0, 0, 0.1)
+	);
+	overflow: hidden;
+}
+
+:host::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: func.em(4, var.$font-size-primary);
+	background-color: var.$color-red;
+}
+
+.title {
+	margin-bottom: func.em(8, 20);
+}
+
+.desc {
+	font-size: func.em(13, var.$font-size-primary);
+}
+
+.image {
+	@include mix.flexbox;
+	@include mix.justify-content(flex-end);
+	margin-top: auto;
+}
+
+.image img {
+	width: func.em(56, var.$font-size-primary);
+	height: func.em(56, var.$font-size-primary);
+}

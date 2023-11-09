@@ -1,0 +1,21 @@
+@use '../../../../assets/scss/abstracts/variables' as var;
+@use '../../../../assets/scss/abstracts/functions' as func;
+@use '../../../../assets/scss/abstracts/mixins' as mix;
+
+:host,
+.block {
+	@include mix.flexbox;
+	@include mix.flex-direction(column);
+	gap: func.em(24, var.$font-size-primary);
+}
+
+@media (min-width: 48em) {
+	:host {
+		@include mix.flex-direction(row);
+	}
+
+	.block {
+		@include mix.flex(1);
+		@include mix.justify-content(center);
+	}
+}
