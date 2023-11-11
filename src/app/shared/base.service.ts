@@ -3,28 +3,28 @@ export class BaseService {
 		intro: {
 			title: 'Reliable, efficient delivery',
 			subtitle: 'Powered by Technology',
-			desc: 'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful'
+			description: 'Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful'
 		},
 		list: {
 			supervisor: {
 				title: 'Supervisor',
-				desc: 'Monitors activity to identify project roadblocks',
-				imageSrc: '/assets/images/icons/supervisor.svg'
+				description: 'Monitors activity to identify project roadblocks',
+				imageUrl: '/assets/images/icons/supervisor.svg'
 			},
 			teamBuilder: {
 				title: 'Team Builder',
-				desc: 'Scans our talent network to create the optimal team for your project',
-				imageSrc: '/assets/images/icons/team-builder.svg'
+				description: 'Scans our talent network to create the optimal team for your project',
+				imageUrl: '/assets/images/icons/team-builder.svg'
 			},
 			karma: {
 				title: 'Karma',
-				desc: 'Regularly evaluates our talent to ensure quality',
-				imageSrc: '/assets/images/icons/karma.svg'
+				description: 'Regularly evaluates our talent to ensure quality',
+				imageUrl: '/assets/images/icons/karma.svg'
 			},
 			calculator: {
 				title: 'Calculator',
-				desc: 'Uses data from past projects to provide better delivery estimates',
-				imageSrc: '/assets/images/icons/calculator.svg'
+				description: 'Uses data from past projects to provide better delivery estimates',
+				imageUrl: '/assets/images/icons/calculator.svg'
 			}
 		}
 	};
