@@ -10,10 +10,7 @@
 	padding: func.em(24, var.$font-size-primary);
 	background-color: var.$color-white;
 	@include mix.border-radius(8px);
-	@include mix.box-shadow(
-		0px func.em(15, var.$font-size-primary)
-			func.em(20, var.$font-size-primary) 0 rgba(0, 0, 0, 0.1)
-	);
+	@include mix.box-shadow(0 15px 20px rgba(0, 0, 0, 0.1));
 	overflow: hidden;
 }
 

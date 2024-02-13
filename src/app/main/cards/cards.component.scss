@@ -8,7 +8,7 @@
 	@include mix.flex-direction(column);
 	gap: func.em(76, var.$font-size-primary);
 	width: 100%;
-	max-width: func.em(420, var.$font-size-primary);
+	max-width: func.em(340, var.$font-size-primary);
 	margin: func.em(40, var.$font-size-primary) 0
 		func.em(60, var.$font-size-primary);
 }
@@ -20,7 +20,7 @@
 	text-align: center;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 57.5em) {
 	:host {
 		gap: func.em(60, var.$font-size-primary);
 		max-width: func.em(1110, var.$font-size-primary);
