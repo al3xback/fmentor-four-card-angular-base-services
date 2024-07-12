@@ -6,8 +6,9 @@
 	position: relative;
 	@include mix.flexbox;
 	@include mix.flex-direction(column);
+	gap: func.em(10, var.$font-size-primary);
 	min-height: func.em(220, var.$font-size-primary);
-	padding: func.em(24, var.$font-size-primary);
+	padding: func.em(28, var.$font-size-primary);
 	background-color: var.$color-white;
 	@include mix.border-radius(8px);
 	@include mix.box-shadow(0 15px 20px rgba(0, 0, 0, 0.1));
@@ -22,10 +23,6 @@
 	width: 100%;
 	height: func.em(4, var.$font-size-primary);
 	background-color: var.$color-orange;
-}
-
-.title {
-	margin-bottom: func.em(8, 20);
 }
 
 .desc {

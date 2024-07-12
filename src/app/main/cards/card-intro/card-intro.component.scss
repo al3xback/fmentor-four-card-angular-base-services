@@ -1,15 +1,16 @@
 @use '../../../../assets/scss/abstracts/variables' as var;
 @use '../../../../assets/scss/abstracts/functions' as func;
 
-.title {
+.subtitle {
+	margin-bottom: func.em(6, 24);
+	font-size: func.em(24, var.$font-size-primary);
 	font-weight: var.$font-weight-200;
+	color: var.$color-dark-blue;
+	line-height: 1;
 }
 
-.subtitle {
+.title {
 	margin-bottom: func.em(16, 24);
-	font-size: func.em(24, var.$font-size-primary);
-	color: var.$color-dark-blue;
-	line-height: 1.25;
 }
 
 @media (min-width: 57.5em) {
@@ -19,6 +20,6 @@
 	}
 
 	.subtitle {
-		margin-bottom: func.em(16, 36);
+		margin-bottom: func.em(10, 36);
 	}
 }
